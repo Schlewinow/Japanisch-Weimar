@@ -1,0 +1,38 @@
+\documentclass[12pt, paper=a4]{article}
+
+% page description
+\usepackage[a4paper, left=2cm, right=2cm, top = 2cm, bottom= 2cm]{geometry}
+
+% allows to split the content of a page into columns
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+% used for Japanese text in general
+\usepackage{xltxtra, setspace}
+
+% used for lists
+\usepackage{scrextend}
+
+%% fonts
+
+% xeCJK options
+\usepackage[boldfont, CJKnumber,CJKchecksingle]{xeCJK}
+
+% main font for CJK input
+\setCJKmainfont[Script=CJK]{TakaoMincho}
+
+% use \ruby{kanji}{kana} to set Furigana
+\usepackage[CJK,overlap]{ruby}
+% position of Furigana: top
+\renewcommand{\rubysep}{-0.5ex}
+% furigana size
+\renewcommand{\rubysize}{0.6}
+% increase line space for Furigana
+\onehalfspacing
+
+\pagestyle{empty}
+
+\begin{document}
+	\include{Adjektive1.2}
+	\include{Adjektive2.2}
+\end{document}
