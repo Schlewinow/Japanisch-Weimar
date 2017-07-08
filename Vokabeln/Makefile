@@ -6,4 +6,4 @@ all:
 	# xelatex complete.tex
 
 clean:
-	rm -rf *.{aux,log}
+	rm -rf *.{aux,log,out}
